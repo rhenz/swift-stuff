@@ -89,6 +89,12 @@ class Keeper<Animal: Pet> {
    
    public func animalAtIndex(_ index: Int) -> Animal {
       animals[index]
+      
+   }
+   
+   public func last() {
+      print("POTA")
+      print(animals.last)
    }
 }
 
@@ -98,6 +104,7 @@ let oli = Cat(name: "Oli")
 
 christine.lookAfter(chabby)
 christine.lookAfter(oli)
+christine.last()
 
 
 christine.countAnimals
